@@ -79,6 +79,13 @@ module.exports = {
       ]
     }),
     new Dotenv(),
-    
   ],
+  devServer: {
+    static: path.join(__dirname, 'dist'),
+    watchFiles: path.join(__dirname, "./**"),
+    compress: true,
+    historyApiFallback: true,
+    port: 8080,
+    open:true
+  }
 }
