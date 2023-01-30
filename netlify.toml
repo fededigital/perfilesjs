@@ -1,0 +1,4 @@
+[build]
+  publish = "dis"
+  command = "npm run build"
+  
